@@ -4,13 +4,13 @@
 %endif
 
 Name:     tuxedo-drivers-kmod
-Version:  4.17.0
+Version:  4.17.0.metabox1
 Release:  1%{?dist}
 Summary:  Tuxedo drivers as kmod
 License:  GPL-2.0-or-later
 URL:      https://gitlab.com/tuxedocomputers/development/packages/tuxedo-drivers
 
-Source:   %{url}/-/archive/v%{version}/tuxedo-drivers-v%{version}.tar.gz
+Source:   https://github.com/poloromagos-tech/tuxedo-drivers/archive/refs/tags/v4.17.0-metabox1.tar.gz
 
 BuildRequires: kmodtool
 BuildRequires: kernel-devel
