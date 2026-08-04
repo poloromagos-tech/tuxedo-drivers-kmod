@@ -3,6 +3,7 @@
 %global debug_package %{nil}
 %endif
 
+
 Name:     tuxedo-drivers-kmod
 Version:  4.17.0.metabox1
 Release:  1%{?dist}
@@ -26,7 +27,7 @@ Tuxedo drivers as kmod
 %{expand:%(kmodtool --target %{_target_cpu} --kmodname %{name} %{?buildforkernels:--%{buildforkernels}} %{?kernels:--for-kernels "%{?kernels}"} 2>/dev/null) }
 
 %prep
-%setup -q -n tuxedo-drivers-v%{version}
+%setup -q -n tuxedo-drivers-4.17.0-metabox1
 
 for kernel_version  in %{?kernel_versions} ; do
   cp -a src _kmod_build_${kernel_version%%___*}
